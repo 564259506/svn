@@ -1,0 +1,40 @@
+安装服务器
+安装客户端
+
+
+1.  创建SVN仓库 : 
+      Repositories  -->  右键  Create new repositories  --> ...
+
+2.  本地 --> svn （上传本地项目到svn）
+      找到要上传的项目 --> 右键点小乌龟(TortoiseSVN)  ---> 导入（im~）--> 选择存放路径+备注
+
+3.  svn --> 本地 （ 拉取SVN中项目到本地）
+     右键 （找到本地存放项目的位置右键） -- > 
+     svn检出（SVN Checkout）-- >
+      输入版本库URL + 本地目录   （svn地址和本地地址）-->
+     
+4.  修改后  本地 --> svn   （修改后先add--再提交）
+      修改后的文件右键   ---> 右键点小乌龟(TortoiseSVN)  -->add(加入)  ---> 提交（记得写备注）
+ 
+5.  版本冲突：
+     更新 --> 修改，  先更新，再修改
+     每次操作代码记得先更新代码； 修改完代码后及时提交
+
+  ！！！ 遇到冲突时
+   右键冲突文件  -->小乌龟 --> Edit conflicts(编辑冲突)     /    【或者前面弹窗双击 ”conflicted“】
+   --  > 选择使用自己/  使用别人 /  自定义解决
+   -- >
+
+6.  idea中集成svn
+     setting  -- >  version control  --> subversion  -->  配置 xx/xx/xx/xx/ svn.exe
+
+7.  svn  -- > idea   (从svn拉取项目到idea)
+    VSC  --> Get from Version Control -->  svn  -->URL (没有就新建 +)  --> Directory (项目本地存储地址)  ---> 选择1.8  --> 选择打开
+
+8.  提交代码
+     VSC  -->  commit(记得修改前先更新代码) 
+9.  更新代码
+     VSC  --> update 
+
+10.  从Idea中导入项目到svn
+   VSC ---> import  into version  control   --->  import  into  subversion  -->选择svn目录（记得加一个项目目录，不然东西都在跟目录下） 
